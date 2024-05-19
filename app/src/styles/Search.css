@@ -1,0 +1,258 @@
+.Search {
+    margin-top: 3.2rem;
+}
+
+@media (max-width: 44rem) {
+    .Search {
+        margin-top: 2.5rem;
+    }
+}
+
+@media (max-width: 28rem) {
+    .Search {
+        margin-top: 1.5rem;
+    }
+}
+
+form {
+    position: relative;
+    margin-bottom: 2.8rem;
+}
+
+input[type=text] {
+    width: 100%;
+    height: 4rem;
+    border: none;
+    border-radius: 16px;
+    font-size: 1.25rem;
+    padding-left: 24px;
+    color: var(--header-text);
+    background-color: var(--input-bg);
+    outline-color: #a445ed;
+}
+
+form button {
+    border: none;
+    background-color: transparent;
+    position: absolute;
+    right: 24px;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+.warning {
+    color: #ff5252;
+    position: absolute;
+    top: calc(100% + 5px);
+}
+
+@media (max-width: 28rem) {
+    input[type=text] {
+        height: 3rem;
+    }
+    form {
+        margin-bottom: 1.75rem;
+    }
+}
+
+.search-result-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    color: var(--header-text);
+    font-weight: 700;
+}
+
+.word p {
+    font-size: 1.75rem;
+    margin-top: 0.75rem;
+}
+
+.purple-text {
+    color: #a445ed;
+}
+
+.play-btn {
+    width: 75px;
+    height: 75px;
+    background-color: rgb(164, 69, 237, 0.25);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.play-btn-triangle {
+    border-top: 10.5px solid transparent;
+    border-bottom: 10.5px solid transparent;
+    border-left: 21px solid #a445ed;
+}
+
+.play-btn:hover {
+    background-color: rgb(164, 69, 237);
+}
+
+.play-btn:hover .play-btn-triangle {
+    border-left-color: white;
+    cursor: pointer;
+}
+
+fieldset {
+    margin-top: 2.625rem;
+    border: none;
+    border-top: 1px solid var(--border);
+}
+
+legend {
+    padding-right: 24px;
+    color: var(--header-text);
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+fieldset h2 {
+    color: #757575;
+    margin-top: 2.625rem;
+    font-weight: 400;
+}
+
+ul {
+    margin-top: 1rem;
+    margin-bottom: -0.75rem;
+    padding-left: 20px;
+    margin-left: 22px;
+}
+
+li {
+    margin-bottom: 0.75rem;
+    font-size: 1.125rem;
+    line-height: 1.5rem;
+    color: #a445ed;
+}
+
+li p {
+    color: var(--paragraph);
+}
+
+.example {
+    color: #757575;
+    margin-top: 0.75rem;
+}
+
+.syn-an, .source {
+    display: flex;
+    align-items: baseline;
+}
+
+.syn-an h2 {
+    margin-right: 40px;
+}
+
+.syn-an .purple-text {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.antonyms h2 {
+    margin-top: 1.5rem;
+}
+
+.result-hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin-top: 2.5rem;
+}
+
+.source {
+    font-size: 0.9375rem;
+    margin-top: 1.25rem;
+}
+
+.source h3 {
+    color: #757575;
+    margin-right: 25px;
+    font-weight: 400;
+}
+
+.source a {
+    color: var(--paragraph);
+    text-decoration: none;
+}
+
+.source svg {
+    margin-left: 8px;
+}
+
+@media (max-width: 44rem) {
+    fieldset h2 {
+        margin-top: 2.375rem;
+    }
+}
+
+@media (max-width: 28rem) {
+    h1 {
+        font-size: 2rem;
+    }
+    .word p {
+        margin-top: 0.5rem;
+    }
+    .play-btn {
+        width: 48px;
+        height: 48px;
+    }
+    .play-btn-triangle {
+        border-top: 6.5px solid transparent;
+        border-bottom: 6.5px solid transparent;
+        border-left: 13px solid #a445ed;
+    }
+    fieldset {
+        margin-top: 2rem;
+    }
+    legend {
+        font-size: 1.125rem;
+    }
+    fieldset h2 {
+        margin-top: 2rem;
+    }
+    ul {
+        margin-left: 0;
+    }
+    li {
+        font-size: 0.9375rem;
+    }
+    .syn-an h2 {
+        margin-right: 26px;
+    }
+    .result-hr {
+        margin-top: 2rem;
+    }
+    .source {
+        display: block;
+    }
+}
+
+.error {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.emoji {
+    font-size: 64px;
+    margin-bottom: 20px;
+}
+
+.err-message {
+    color: var(--header-text);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+}

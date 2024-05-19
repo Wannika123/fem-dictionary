@@ -1,0 +1,114 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-2nd-part {
+    display: flex;
+    align-items: center;
+}
+
+.font-selector {
+    position: relative;
+    margin-right: 1.625rem;
+}
+
+.curr-font-div:hover {
+    cursor: pointer;
+}
+
+.curr-font {
+    margin-right: 16px;
+    color: var(--header-text);
+}
+
+.font-choices {
+    position: absolute;
+    width: 11.5rem;
+    padding: 16px 24px;
+    background-color: var(--font-choices-bg);
+    right: 0;
+    top: calc(100% + 10px);
+    border-radius: 16px;
+    display: none;
+    z-index: 3;
+    box-shadow: 0 0 20px 1px var(--shadow);
+}
+
+.font-choice {
+    padding: 0.5rem 0;
+}
+
+.font-choice:hover {
+    cursor: pointer;
+}
+
+.header-hr {
+    border: none;
+    height: 100%;
+    border-right: 1px solid #e9e9e9;
+}
+
+.toggle {
+    display: flex;
+    align-items: center;
+}
+
+.toggle-btns {
+    width: 2.5rem;
+    height: 1.25rem;
+    background-color: var(--toggle-bg);
+    border-radius: 0.625rem;
+    margin-left: 1.625rem;
+    position: relative;
+}
+
+input[type=radio] {
+    width: 1.2rem;
+    height: 1.2rem;
+    opacity: 0;
+}
+
+input[type=radio]:hover {
+    cursor: pointer;
+}
+
+.ball {
+    width: 0.875rem;
+    height: 0.875rem;
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+    transition: 5s ease-in-out;
+}
+
+#light:checked ~ .ball {
+    left: 0.1875rem;
+}
+
+#dark:checked ~ .ball {
+    right: 0.1875rem;
+}
+
+label {
+    margin-left: 20px;
+}
+
+label:hover {
+    cursor: pointer;
+}
+
+@media (max-width: 28rem) {
+    .font-selector {
+        margin-right: 1rem;
+    }
+    .toggle-btns {
+        margin-left: 1rem;
+    }
+    label {
+        margin-left: 12px;
+    }
+}
